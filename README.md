@@ -7,19 +7,6 @@ Predicting telecom customer churn using machine learning and delivering actionab
 Project Overview
 Customer churn is one of the most critical challenges in the telecom industry. This project builds an end-to-end Business Intelligence and Analytics pipeline on a real-world Telco dataset of 7,043 customers, combining predictive ML models with RFM-based customer segmentation to identify at-risk customers and recommend targeted retention actions.
 
-Key Metrics
-MetricValueTotal Customers7,043Churn Rate26.5%Avg Customer Lifetime Value (All)$7,771Avg CLV (At-Risk Customers)$10,095High-Risk Customers Identified1,040Best Model AUC-ROC0.838 (Logistic Regression)
-
-Dataset
-Source: IBM Telco Customer Churn Dataset
-File: Telco.csv — 7,043 rows × 21 features
-Key Features:
-
-Demographics: gender, SeniorCitizen, Partner, Dependents
-Services: PhoneService, InternetService, StreamingTV, OnlineSecurity, etc.
-Account Info: Contract, PaymentMethod, MonthlyCharges, TotalCharges, tenure
-Target: Churn (Yes / No)
-
 
 Methodology
 1. Data Preprocessing
@@ -35,11 +22,11 @@ Distribution of monthly charges among churned vs. retained customers
 Support ticket keyword frequency analysis
 
 3. Customer Segmentation (RFM Analysis)
-Customers segmented into four groups based on Recency, Frequency, and Monetary value:
-SegmentCountStrategy Hibernating~2,100Re-engagement campaigns  At Risk~1,800Immediate retention call + loyalty discount Loyal~1,600Ambassador programme + referral incentives Champions~1,500Early renewal discount + reward programme
-4. Churn Risk Tiering
-TierShareLow62.3%Medium23.0%High14.8%
-5. Machine Learning Models
+Customers segmented into four groups based on Recency, Frequency, and Monetary value
+
+5. Churn Risk Tiering
+
+6. Machine Learning Models
 Three classification models were trained and evaluated:
 ModelAUC-ROCLogistic Regression0.838 BestANN (Neural Network)0.832Decision Tree0.826
 ROC curves were plotted for all three models for visual comparison.
